@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(95, 95, 95, 0.2);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /* la propiedad transition hace que se aplique una pequeña
+  animaciín de 0.5 segundos cuando la pseudo clase hover se active */
+  transition: all 0.5s;
+}
+
+/*  Pseudo clase hover */
+a:hover {
+  background: rgba(83, 83, 83, 0.6);
+}
+
+.wrapper {
+  box-shadow: 6px 6px 32px 1px rgba(0, 0, 0, 0.27);
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  height: 90vh;
+  background: linear-gradient(260deg, #219df0 0%, #23faa8 100%);
+}
+
+/* Esta regla escoge todas las ul  */
+/* dentro de la clase .flex-nav */
+.flex-nav ul {
+  /* esta propiedad le quita el bullet al elemento li */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.text {
+  width: 100%;
+}
